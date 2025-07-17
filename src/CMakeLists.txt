@@ -71,6 +71,10 @@ if(OQS_ENABLE_SIG_SNOVA)
     add_subdirectory(sig/snova)
     set(SIG_OBJS ${SIG_OBJS} ${SNOVA_OBJS})
 endif()
+if(OQS_ENABLE_SIG_HAETAE)
+    add_subdirectory(sig/haetae)
+    set(SIG_OBJS ${SIG_OBJS} ${HAETAE_OBJS})
+endif()
 ##### OQS_COPY_FROM_UPSTREAM_FRAGMENT_ADD_ALG_OBJECTS_END
 
 if(OQS_ENABLE_SIG_STFL_XMSS)
